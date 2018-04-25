@@ -103,6 +103,48 @@ p {
 	font-size: 16px;
 	padding: 0 20px;
 }
+.pseudo {
+	width: 100%;
+}
+.rainbow {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+.rainbow:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.rainbow li {
+	list-style: none;
+	width: 100px;
+	height: 100px;
+	display: block;
+	float: left;
+	margin: 20px;
+}
+.rainbow li:first-child {
+	background: #ff0000;
+}
+.rainbow li:nth-child(2) {
+	background: #ffa500;
+}
+.rainbow li:nth-child(3) {
+	background: #ffff00;
+}
+.rainbow li:nth-child(4) {
+	background: #008000;
+}
+.rainbow li:nth-child(5) {
+	background: #00daff;
+}
+.rainbow li:nth-child(6) {
+	background: #0000ff;
+}
+.rainbow li:last-child {
+	background:#ee82ee;
+}
 @media (min-width: 320px) {
 	.center {
 		width: 400px;
