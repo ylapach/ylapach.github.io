@@ -38,6 +38,13 @@ main {
 .dropdown:hover {
 	background: #A6A297;
 }
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.dropdown:hover .menu-link {
+    background-color: #9195C5;
+}
 .sub-menu {
 	width: 153px;
     display: none;
@@ -69,13 +76,6 @@ main {
 }
 .sub-menu a:hover {background-color: #9195C5}
 
-.dropdown:hover .sub-menu {
-    display: block;
-}
-
-.dropdown:hover .menu-link {
-    background-color: #9195C5;
-}
 .blocks {
 	width: 100%;
 }
@@ -145,5 +145,22 @@ p {
 	}
 	p {
 		color: #4c4c4c;
+	}
+}
+@media (max-width: 808px) {
+	.header{
+		width: 150px;
+	}
+	.header:hover .main-menu {
+		display: block;
+	}
+	.main-menu {
+		float: left;
+		position: static;
+		display: none;
+	}
+	.sub-menu {
+		margin-left: 143px;
+		margin-top: -28px;
 	}
 }
