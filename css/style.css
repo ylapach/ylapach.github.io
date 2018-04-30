@@ -7,14 +7,30 @@ main {
 .header {
 	background: #cadbed;
 	height: 100px;
+	width: 100%;
 }
 .header:after {
 	content: "";
 	display: block;
 	clear: both;
 }
-.main-menu {
+.top {
+	width: 84%;
+	height: 100%;
+	margin: 0 auto;
+}
+.logo {
+    width: 200px;
+	height: 100%;
+	float: left;
+	padding: 30px 0 0 0;
+}
+.menu {
+	width: 1000px;
+	height: 100%;
 	float: right;
+}
+.main-menu {
 	list-style: none;
 	color: #2c71b8;
 	padding: 0px;
