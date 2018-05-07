@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-image: url(img/patt.png);
+	background-image: url(../img/patt.png);
 	font-family: 'Roboto', sans-serif;
 }
 .container {
@@ -22,6 +22,12 @@ body {
 }
 .col-md-6 {
 	width: 50%;
+}
+.col-md-2 {
+	width: 16.7%;
+}
+.col-md-1 {
+	width: 8.3%;
 }
 
 
@@ -57,7 +63,7 @@ body {
 	height: 40px;
 	background-color: white;
 	float: right;
-	background-image: url(img/cart.png);
+	background-image: url(../img/cart.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
@@ -79,65 +85,46 @@ body {
 	width: 10px;
 	height: 10px;
 	position: absolute;
-	background-image: url(icon.png);
-}body {
-	margin:0;
-}
-main {
-	margin:0 10px;
-}
-header {
-	background: #cadbed;
-	height: 100px;
-	text-align: center;
-}
-header:after {
-	content: "";
+	background-image: url(../img/down-arrow.png);
 	display: block;
-	clear: both;
 }
-.logo {
-    width: 200px;
-	float: left;
-	padding-top: 30px;
+.active:hover .sub-menu {
+    display: block;
 }
-.menu {
-	width: 572px;
-	height: 100%;
-	padding-left: 100px;
-	float: left;
-}
-.main-menu {
-	list-style: none;
-	color: #2c71b8;
-	padding: 0px;
-	position: absolute;
-	font-size: 21px;
-	font-weight: 300;
-}
-.dropdown {
-	width: 143px;
-	height: 51px;
-	margin: 0;
-	padding: 15px 0 0 0;
+.active {
 	box-sizing: border-box;
-	float: left;
-	text-align: center;
-}
-li.dropdown {
-	border-right: 1px solid #2c71b8;
-	border-left: 1px solid transparent;
-}
-.dropdown:hover {
-	background: #2c71b8;
-	color: #ffffff;
 }
 .sub-menu {
-	display: none;
-	list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #2c71b8;
+    margin: 0 0 0 -1px;
+    padding: 0 0 10px 0;
+    z-index: 1;
+    color: #ffffff;
+    text-align: left;
 }
-.sub-menu:hover {
+.menu .sub-menu li {
+	list-style: none;
+	width: 100%;
+}
+.menu .sub-menu li:hover {
+	background: #ffffff;
+}
+.menu .sub-menu a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px;
+	text-align: left;
 	display: block;
+}
+.menu .sub-menu a:hover {
+	background: #2c71b8;
+	display: block;
+	box-sizing: border-box;
+}
+.sub-menu a:hover {
+	background-color: #2c71b8;
 }
 .search {
 	width: 260px;
