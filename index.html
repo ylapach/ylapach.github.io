@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Online Shop</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
 </head>
@@ -13,14 +14,14 @@
       <div class="row">
         <div class="col-md-3">
           <div class="logo">
-            <a href=""><img src="img/logo.png" alt=""></a>
+            <a href="#"><img src="img/logo.png" alt=""></a>
           </div>
         </div>
         <div class="col-md-6">
-          <ul class="menu row">
+          <ul class="menu">
             <li><a href="">Home</a></li>
             <li class="active"><a href="">Products</a>
-              <ul class="sub-menu col-md-2">
+              <ul class="dropdown">
                 <li><a href="#">Lorem ipsum dolor</a></li>
                 <li><a href="#">Sit amet</a></li>
                 <li><a href="#">Consectetur adipisicing</a></li>
@@ -34,21 +35,76 @@
             <li><a href="">Shipping</a></li>
           </ul>
         </div>
-          <div class="col-md-2">
-              <div class="search">
-                  <input type="search" placeholder="search" name="">
-              </div> 
-          </div>
-          <div class="col-md-1">        
-            <div class="cart-widget">
-              <div class="count">4</div>
-          </div>
+        <div class="col-md-2">
+	        <div class="search">
+	            <form>
+	            	<input type="search" placeholder="search" name="">
+	            	<input id="search" type="button" value="">
+	            </form>
+	        </div>
+	    </div>
+	        <div class="col-md-1">        
+		        <div class="cart-widget">
+		            <div class="count">4</div>
+		        </div>
+		    </div>
         </div>
-        </div>
-      </div>
     </div>
   </header>
   <main>
+  	<div class="container top-bn">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<div class="banner">
+  					<div class="sq">
+  						<div class="sq-btn sq-inactive"></div>
+  						<div class="sq-btn sq-inactive"></div>
+  						<div class="sq-btn sq-active"></div>
+  						<div class="sq-btn sq-inactive"></div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="content">
+	  	<div class="container">
+		  	<div class="row">
+		  		<div class="col-md-3">
+		  			<div class="sort"></div>
+		  		</div>
+		  		<div class="col-md-9">
+		  			<div class="row">
+		  				<div class="col-md-9 menu-2">
+		  					<ul id="menu-2">
+		  						<li><a href="#">Home page</a></li>
+		  						<li><a href="#">Products</a></li>
+		  						<li><a id="active" href="#">Laptops and Tablets</a></li>
+		  					</ul>
+		  				</div>
+		  			</div>
+		  			<div class="row">
+		  				<div class="col-md-9">
+		  					<h1>Laptops and Tablets</h1>
+		  				</div>
+		  				<div class="col-md-3">
+		  					<div class="dd" placeholder="sort by price">
+		  						<ul class="dropdown">
+		  							<li>sort by name</li>
+		  							<li>sort by date</li>
+		  							<li>sort by popularity</li>
+		  						</ul>
+		  					</div>
+		  				</div>
+		  			</div>
+		  			<div class="row">
+		  				<div class="col-md-3"></div>
+		  				<div class="col-md-3"></div>
+		  				<div class="col-md-3"></div>
+		  			</div>
+		  		</div>
+		  	</div>
+	  </div>
+	</div>
   </main>
 </body>
 </html>
