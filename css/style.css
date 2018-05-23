@@ -294,7 +294,7 @@ p {
 	width: 88%;
 	padding:  0;
 }
-.btn a, button.btn {
+.btn a, button.btn, input[type=submit] {
 	text-decoration: none;
 	color: #ffffff;
 	line-height: 36px;
@@ -321,14 +321,36 @@ button.btn:after {
 	top: 2px;
 	padding: 0 0 0 10px;
 }
-button.btn:hover {
-	color: #ffffff;
+button.btn:hover:after {
+	background-image: url(../img/cart.png);
+}
+.btn:hover, .btn a:hover, button.btn:hover, input[type=submit]:hover {
+	color: #2c71b8;
+	background-color: #ffffff;
 }
 
 
 .more {
 	text-align: center;
 	margin-top: 40px;
+}
+
+
+form.filter {
+	padding: 30px;
+}
+form.filter p {
+	margin: 25px 0 25px 0;
+}
+
+label {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 21px;
+	display: block;
+}
+input[type=checkbox] {
+	margin-right: 10px;
 }
 
 footer {
