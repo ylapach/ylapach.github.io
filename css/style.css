@@ -66,12 +66,20 @@ p {
 	position: relative;
 }
 .menu li:hover a {
-	background: #2c71b8;
+	background-color: #2c71b8;
 	color: white;
 }
 
 .active a:after {
-	background: url(../img/down-arrow.png) no-repeat;
+	content: "";
+	display: inline-block;
+	position: relative;
+	background-image: url(../img/down-arrow.png);
+	width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding: 0 0 0 15px;
 }
 .active:hover .dropdown {
     display: block;
@@ -342,16 +350,32 @@ form.filter {
 form.filter p {
 	margin: 25px 0 25px 0;
 }
-
+input {
+	display: none;
+}
+label {
+	position: relative;
+	cursor: pointer;
+}
+label:before {
+	content: "";
+	display:inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #ffffff;
+	margin: 0 10px 3px 0;
+}
 label {
 	color: #ffffff;
 	font-weight: normal;
 	font-size: 21px;
 	display: block;
 }
-input[type=checkbox] {
-	margin-right: 10px;
+input:checked + label:before {
+	background: #ffffff;
 }
+
+
 
 footer {
 	background: rgba(255, 255, 255, 0.75);
