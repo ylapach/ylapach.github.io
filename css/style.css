@@ -80,12 +80,14 @@ p {
     background-repeat: no-repeat;
     margin-left: 4px;
 }
-.active:hover .dropdown {
-    display: block;
-}
 a.down:hover:after {
 	background-image: url(../img/down-arrow.png);
 }
+.active:hover .dropdown {
+    display: block;
+}
+
+
 .dropdown {
     display: none;
     position: absolute;
