@@ -152,6 +152,10 @@ p {
 	background-position: center;
 	position: relative;
 }
+.cart-widget:hover {
+	background-image: url(../img/cart-white.png);
+	background-color: #2c71b8;
+}
 .count {
 	position: absolute;
 	width: 20px;
@@ -356,6 +360,10 @@ input {
 label {
 	position: relative;
 	cursor: pointer;
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 21px;
+	display: block;
 }
 label:before {
 	content: "";
@@ -364,12 +372,6 @@ label:before {
 	height: 10px;
 	border: 1px solid #ffffff;
 	margin: 0 10px 3px 0;
-}
-label {
-	color: #ffffff;
-	font-weight: 300;
-	font-size: 21px;
-	display: block;
 }
 input:checked + label:before {
 	background: #ffffff;
