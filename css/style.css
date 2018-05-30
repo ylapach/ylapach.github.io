@@ -367,7 +367,7 @@ label:before {
 }
 label {
 	color: #ffffff;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 21px;
 	display: block;
 }
