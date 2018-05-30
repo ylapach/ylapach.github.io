@@ -357,7 +357,7 @@ form.filter {
 form.filter p {
 	margin: 25px 0 25px 0;
 }
-input {
+input.check {
 	display: none;
 }
 label {
@@ -376,7 +376,7 @@ label:before {
 	border: 1px solid #ffffff;
 	margin: 0 10px 3px 0;
 }
-input:checked + label:before {
+input.check:checked + label:before {
 	background: #ffffff;
 }
 
